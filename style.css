@@ -109,10 +109,11 @@ nav.sticky .menu-btn{
 
 /* home section styling */
 .home{
+  /* background-color: #4070f4; */
   height: 100vh;
   width: 100%;
   background: url("Images/background.png") no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-attachment: fixed;
   font-family: 'Ubuntu', sans-serif;
@@ -131,23 +132,23 @@ nav.sticky .menu-btn{
 }
 .home .text-two{
   color: #0E2431;
-  font-size: 75px;
+  font-size: 65px;
   font-weight: 600;
   margin-left: -3px;
 }
 .home .text-three{
-  font-size: 40px;
+  font-size: 35px;
   margin: 5px 0;
   color: #0b0c0e;
 }
 .home .text-three:hover{
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 800px;
  
   color: #4070f4;
 }
 .home .text-four{
-  font-size: 23px;
+  font-size: 20px;
   margin: 5px 0;
   color: #0E2431;
 }
@@ -479,6 +480,16 @@ footer .text span a:hover{
   nav .navbar{
     width: 90%;
   }
+  .home{
+    /* background-color: #4070f4; */
+    height: 100vh;
+    width: 100%;
+    background: url("Images/background.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+  }
   nav .navbar .menu{
     position: fixed;
     left: -100%;
@@ -489,7 +500,8 @@ footer .text span a:hover{
     width: 100%;
     padding-top: 60px;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    padding-left:10px;
     transition: all 0.5s ease;
   }
   .navbar.active .menu{
@@ -539,17 +551,34 @@ footer .text span a:hover{
   .contact .text{
     width: 100%;
 }
+.home .text-one{
+  font-size: 17px;
+}
+.home .text-two{
+  font-size: 18px;
+}
+.home .text-three{
+  font-size: 17px;
+}
+.home .text-four{
+  font-size: 17px;
+}
 }
 
 @media (max-width: 500px){
   .home .text-two{
-    font-size: 55px;
+    font-size: 22px;
   }
   .home .text-three{
-    font-size: 33px;
+    font-size: 14px;
   }
   .skills-details .boxes .per{
     font-size: 50px;
     color: #4070f4;
+  }
+}
+@media(max-width: 350px){
+  .home {
+    background-size:contain;
   }
 }
