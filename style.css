@@ -113,7 +113,7 @@ nav.sticky .menu-btn{
   height: 100vh;
   width: 100%;
   background: url("Images/background.png") no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   font-family: 'Ubuntu', sans-serif;
@@ -157,9 +157,9 @@ nav.sticky .menu-btn{
 }
 .home .button button{
   outline: none;
-  padding: 8px 16px;
+  padding: 8px 14px;
   border-radius: 6px;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 400;
   background: #4070f4;
   color: #fff;
@@ -275,6 +275,7 @@ section .button button:hover{
    display: flex;
    justify-content: space-between;
    align-items: center;
+   
  }
  .skills-details .text{
    width: 50%;
@@ -302,8 +303,10 @@ section .button button:hover{
 .skills-details .boxes{
   width: 45%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+   flex-wrap: wrap;
+   
+  justify-content: space-between; 
+
 }
 .skills-details .box{
   width: calc(100% / 2 - 20px);
@@ -312,6 +315,7 @@ section .button button:hover{
 .skills-details .boxes .topic{
   font-size: 20px;
   color: #4070f4;
+  word-break: break-word;
 }
 .skills-details .boxes .per{
   font-size: 60px;
@@ -451,6 +455,9 @@ footer .text span a:hover{
   }
 }
 @media (max-width: 1000px) {
+  .home {
+    background-size:contain;
+  }
   .about .about-details{
     justify-content: center;
     flex-direction: column;
@@ -475,6 +482,7 @@ footer .text span a:hover{
     width: 350px;
   }
 }
+
 
 @media (max-width: 750px) {
   nav .navbar{
@@ -539,11 +547,6 @@ footer .text span a:hover{
     width: 100%;
     margin-bottom: 50px;
   }
-  .skills-details .boxes{
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
   .services .boxes .box{
     margin: 20px 0;
     width: 100%;
@@ -566,19 +569,21 @@ footer .text span a:hover{
 }
 
 @media (max-width: 500px){
+  
   .home .text-two{
     font-size: 22px;
   }
   .home .text-three{
     font-size: 14px;
   }
+  .skills-details .boxes{
+    justify-content: space-between;
+  }
   .skills-details .boxes .per{
     font-size: 50px;
     color: #4070f4;
   }
 }
-@media(max-width: 350px){
-  .home {
-    background-size:contain;
-  }
-}
+
+
+
